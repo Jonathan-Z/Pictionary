@@ -1,0 +1,41 @@
+(Server->Client)
+
+STARTROUND
+	TDUR:<Time in this round>
+	WLEN:<Length of word>
+	DRWER:<name of drawer>
+	OPPONENT:
+		NAME:<Name of opponent>
+		SCORE:<Score of opponent>
+
+HINT:
+	CHAR:<Character>
+	POS:<Position of Character>
+
+ENDROUND:
+	OPPONENT:
+		NAME:<Name of opponent>
+		SCORE:<Score of opponent>
+
+PLAYERMSG:
+	GUESS: <Content of Guess>
+	NAME: <Name of opponent>
+
+
+ENDGAME:
+	OPPONENT:
+		NAME:<Name of opponent>
+		SCORE:<Score of opponent>
+	
+-------------------------------------
+(Client->Server)
+
+DRAW:
+	X:<x cord>
+	Y:<y cord>
+
+GUESS:
+	GUESS:<Guess>
+
+WAIT:
+	
